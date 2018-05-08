@@ -7,7 +7,7 @@ Description: This package was created with the help of frmaTools version
     1.24.0.
 Maintainer: Sylvain Gubian <DL.RSupport@pmi.com>
 Depends:
-    R (>= 3.5)
+    R (>= 3.4.3)
 License: GPL (>= 2)
 biocViews: AnnotationData, AffymetrixChip, rat2302, Rattus_norvegicus, FRMA
 Suggests:
