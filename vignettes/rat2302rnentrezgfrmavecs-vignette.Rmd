@@ -62,3 +62,4 @@ library('frma')
 
 affybatch = ReadAffy(filenames = *<CEL files>*, cdfname = 'rat2302rnentrezg')  
 eset = frma(affybatch)
+
