@@ -52,3 +52,13 @@ tool, affy ID based in case the annotation parameter was set to rat2302cdf.
 | Bronchus                          | 164    | E-TABM-458   | 93       |
 | Skeletal muscle                   | 126    | E-TABM-458   | 93       |
 | **TOTAL**                         |        |              | **1023** |
+
+
+**Basig usage:**
+
+library('affy')
+library('rat2302frmavecs')
+library('frma')
+
+affybatch = ReadAffy(filenames = <CEL files>, cdfname = 'rat2302rnentrezg')
+eset = frma(affybatch)
