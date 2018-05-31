@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 vignette: >
     %\VignetteIndexEntry{Vector used by frma for microarrays of type rat2302}
     %\VignetteEngine{knitr::rmarkdown}
-    %\VignetteEncoding{UTF-8}
+    \usepackage[utf8]{inputenc}
 ---
 
 The rat2302frmavecs package was built from the set of 1023 microarray samples,
