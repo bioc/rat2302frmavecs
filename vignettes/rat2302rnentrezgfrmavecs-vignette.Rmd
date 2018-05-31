@@ -56,9 +56,9 @@ tool, affy ID based in case the annotation parameter was set to rat2302cdf.
 
 **Basig usage:**
 
-library('affy')\\
-library('rat2302frmavecs')\\
-library('frma')\\
+library('affy')  
+library('rat2302frmavecs')  
+library('frma')  
 
-affybatch = ReadAffy(filenames = <CEL files>, cdfname = 'rat2302rnentrezg')\\
+affybatch = ReadAffy(filenames = *<CEL files>*, cdfname = 'rat2302rnentrezg')  
 eset = frma(affybatch)
