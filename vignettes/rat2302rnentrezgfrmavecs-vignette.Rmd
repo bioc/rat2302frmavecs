@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 vignette: >
     %\VignetteIndexEntry{Vector used by frma for microarrays of type rat2302}
     %\VignetteEngine{knitr::rmarkdown}
-    %\VignetteEncoding{UTF-8}
+    \usepackage[utf8]{inputenc}
 ---
 
 The rat2302frmavecs package was built from the set of 1023 microarray samples,
@@ -57,8 +57,11 @@ tool, affy ID based in case the annotation parameter was set to rat2302cdf.
 **Basig usage:**
 
 library('affy')
+
 library('rat2302frmavecs')
+
 library('frma')
 
 affybatch = ReadAffy(filenames = <CEL files>, cdfname = 'rat2302rnentrezg')
+
 eset = frma(affybatch)
