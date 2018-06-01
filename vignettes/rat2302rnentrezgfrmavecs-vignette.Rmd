@@ -53,13 +53,17 @@ tool, affy ID based in case the annotation parameter was set to rat2302cdf.
 | Skeletal muscle                   | 126    | E-TABM-458   | 93       |
 | **TOTAL**                         |        |              | **1023** |
 
-
 **Basig usage:**
 
-library('affy')  
-library('rat2302frmavecs')  
-library('frma')  
+```{r}
 
-affybatch = ReadAffy(filenames = *<CEL files>*, cdfname = 'rat2302rnentrezg')  
+library('affy')
+library('frma')
+library('rat2302frmavecs')
+library('rat2302rnentrezgfrmavecs')
+
+celfile = system.file("extdata", "sample.CEL", package = "rat2302frmavecs")
+affybatch = ReadAffy(filenames = celfile, cdfname = 'rat2302rnentrezg')
 eset = frma(affybatch)
 
+```
