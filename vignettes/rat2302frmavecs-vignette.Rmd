@@ -67,7 +67,7 @@ tool, affy ID based in case the annotation parameter was set to rat2302cdf.
 
 # Basig usage
 
-```{r, eval=TRUE, echo=FALSE, include=TRUE}
+```{r, eval=TRUE, echo=TRUE, results='hide', message=FALSE, warning=FALSE}
 
 library('affy')
 library('frma')
