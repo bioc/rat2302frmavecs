@@ -1,12 +1,24 @@
 ---
 title: "Vector used by frma for microarrays of type rat2302"
 author: "Vincenzo Belcastro, Sylvain Gubian"
-date: "`r Sys.Date()`"
+
+package: rat2302frmavecs
+output:
+    BiocStyle::html_document
+
 vignette: >
     %\VignetteIndexEntry{Vector used by frma for microarrays of type rat2302}
     %\VignetteEngine{knitr::rmarkdown}
-    \usepackage[utf8]{inputenc}
+    %\VignetteEncoding{UTF-8}
 ---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+    collapse = TRUE,
+    comment = "#>"
+)
+```
+# Description
 
 The rat2302frmavecs package was built from the set of 1023 microarray samples,
 distributed according to the table below. The maximum number of samples per
@@ -53,17 +65,16 @@ tool, affy ID based in case the annotation parameter was set to rat2302cdf.
 | Skeletal muscle                   | 126    | E-TABM-458   | 93       |
 | **TOTAL**                         |        |              | **1023** |
 
-**Basig usage:**
+# Basig usage
 
-```{r}
+```{r, eval=TRUE, echo=FALSE, include=TRUE}
 
 library('affy')
 library('frma')
 library('rat2302frmavecs')
-library('rat2302rnentrezgfrmavecs')
 
 celfile = system.file("extdata", "sample.CEL", package = "rat2302frmavecs")
-affybatch = ReadAffy(filenames = celfile, cdfname = 'rat2302rnentrezg')
+affybatch = ReadAffy(filenames = celfile, cdfname = 'rat2302cdf')
 eset = frma(affybatch)
 
 ```

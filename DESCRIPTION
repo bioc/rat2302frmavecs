@@ -14,5 +14,8 @@ Suggests:
     BiocStyle,
     knitr,
     rmarkdown
+Imports:
+    affy,
+    frma
 VignetteBuilder: knitr
-RoxygenNote: 5.0.1
+RoxygenNote: 6.1.1
