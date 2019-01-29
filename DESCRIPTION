@@ -1,6 +1,6 @@
 Package: rat2302frmavecs
 Title: Vectors used by frma for microarrays of type rat2302rnentrezg
-Version: 0.99.8
+Version: 0.99.9
 Author: Vincenzo Belcastro <vincenzo.belcastro@pmi.com>, Sylvain Gubian
     <sylvain.gubian@pmi.com>
 Description: This package was created with the help of frmaTools version
