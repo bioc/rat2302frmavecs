@@ -65,7 +65,7 @@ tool, affy ID based in case the annotation parameter was set to rat2302cdf.
 | Skeletal muscle                   | 126    | E-TABM-458   | 93       |
 | **TOTAL**                         |        |              | **1023** |
 
-# Basig usage
+# Basic usage
 
 ```{r, eval=TRUE, echo=TRUE, results='hide', message=FALSE, warning=FALSE}
 
